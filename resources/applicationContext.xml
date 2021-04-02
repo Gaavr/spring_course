@@ -17,5 +17,4 @@
         <property name="surname" value="Gavr"/>
         <property name="age" value="24"/>
     </bean>
-
 </beans>
