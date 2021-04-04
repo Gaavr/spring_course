@@ -1,6 +1,5 @@
+import fix.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import javax.print.attribute.standard.PDLOverrideSupported;
 
 public class Test3 {
     public static void main(String[] args) {
@@ -8,8 +7,8 @@ public class Test3 {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
 
-//        Pet pet = context.getBean("myPet", Pet.class);
-//        Pet pet = new Cat();
+//        fix.Pet pet = context.getBean("myPet", fix.Pet.class);
+//        fix.Pet pet = new fix.Cat();
         Person person = context.getBean("myPerson", Person.class);
         person.callYourPet();
 

@@ -7,15 +7,19 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="classpath:myApp.properties"/>
+<!--    бин - объект, который управляется спингом -->
+<!--    myPet - имя бина-->
+<!--    fix.Dog - имя класса по которому создается бин-->
     <bean id = "myPet"
-          class="Dog"></bean>
+          class="fix.Dog"></bean>
 
     <bean id = "myPerson"
-    class="Person">
+    class="fix.Person">
           <property name="pet" ref="myPet"/>
 
-        <property name="surname" value="Gavr"/>
-        <property name="age" value="24"/>
+        <property name="surname" value="${person.surname}"/>
+        <property name="age" value="${person.age}"/>
 
     </bean>
 </beans>

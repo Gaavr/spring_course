@@ -1,3 +1,4 @@
+import fix.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test2 {
