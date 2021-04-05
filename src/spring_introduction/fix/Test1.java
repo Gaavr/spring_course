@@ -1,3 +1,5 @@
+package fix;
+
 import fix.Cat;
 import fix.Pet;
 

@@ -1,3 +1,5 @@
+package fix;
+
 import fix.Pet;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

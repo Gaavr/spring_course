@@ -1,3 +1,5 @@
+package fix;
+
 import fix.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

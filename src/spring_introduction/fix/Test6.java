@@ -1,3 +1,5 @@
+package fix;
+
 import fix.MyConfig;
 import fix.Person;
 import fix.Pet;
