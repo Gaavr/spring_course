@@ -2,10 +2,10 @@ package aop;
 
 import org.springframework.stereotype.Component;
 
-@Component("uniLibrary")
+@Component()
 public class UniLibrary extends AbstractLibrary {
-    public void getBook() {
-        System.out.println("Мы берем книгу из UniLibrary");
+    public void getBook(Book book) {
+        System.out.println("Мы берем книгу из UniLibrary " + book.getName());
     }
 
     public void returnBook() {
